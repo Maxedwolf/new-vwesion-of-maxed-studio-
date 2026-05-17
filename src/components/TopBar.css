@@ -1,0 +1,124 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+.top-bar {
+  height: 56px;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.model-selector-btn {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 180px;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.model-selector-btn:hover, .model-selector-btn:focus {
+  border-color: var(--accent-cyan);
+  outline: none;
+}
+
+.token-counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+}
+
+.token-label {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.token-value {
+  color: var(--accent-cyan);
+  font-weight: bold;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.top-btn span {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.top-btn:hover {
+  color: var(--accent-cyan);
+  background: transparent;
+}
+
+.export-container {
+  position: relative;
+}
+
+.export-dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-cyan);
+  box-shadow: var(--glow-cyan);
+  display: none;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.export-container:hover .export-dropdown {
+  display: block;
+}
+
+.export-dropdown div {
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.export-dropdown div:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--accent-cyan);
+}
+
+.profile-btn {
+  color: var(--accent-cyan);
+}

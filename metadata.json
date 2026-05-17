@@ -1,0 +1,8 @@
+{
+  "name": "MaxedWolf AI Studio",
+  "description": "Unlock the power of 13+ AI providers in a high-performance cyberpunk playground. Bring your own keys, switch models mid-chat, and customize your neural interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
